@@ -1,20 +1,33 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Intro to Agents Hub</title>
+
   <style>
     body {
-      font-family: sans-serif;
+      font-family: Arial, sans-serif;
       max-width: 700px;
       margin: 80px auto;
       padding: 0 24px;
       color: #1a1a1a;
+      background: #faf9f5;
     }
-    h1 { font-size: 2rem; margin-bottom: 8px; }
-    p { color: #555; margin-bottom: 40px; }
-    a.card {
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    .intro {
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    .card {
       display: block;
       border: 1px solid #ddd;
       border-radius: 8px;
@@ -22,21 +35,46 @@
       margin-bottom: 16px;
       text-decoration: none;
       color: #1a1a1a;
-      transition: border-color 0.2s;
+      background: white;
+      transition:
+        border-color 0.2s,
+        transform 0.2s;
     }
-    a.card:hover { border-color: #888; }
-    a.card h2 { margin: 0 0 6px; font-size: 1.1rem; }
-    a.card p { margin: 0; font-size: 0.9rem; color: #666; }
+
+    .card:hover {
+      border-color: #888;
+      transform: translateY(-2px);
+    }
+
+    .card h2 {
+      margin: 0 0 6px;
+      font-size: 1.1rem;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #666;
+    }
   </style>
 </head>
+
 <body>
-  <h1>Intro to Agents Hub</h1>
-  <p>Resources and guides for the workshop.</p>
+  <main>
+    <h1>Intro to Agents Hub</h1>
 
-  <a class="card" href="knowledge-base.html">
-    <h2>📚 Knowledge Base Guide</h2>
-    <p>How to build and structure a knowledge base for AI agents.</p>
-  </a>
+    <p class="intro">
+      Resources and guides for the workshop.
+    </p>
 
+    <a class="card" href="./knowledge.html">
+      <h2>📚 Knowledge Base Guide</h2>
+
+      <p>
+        How to build and structure a knowledge base for AI agents.
+      </p>
+    </a>
+  </main>
 </body>
 </html>
+```
